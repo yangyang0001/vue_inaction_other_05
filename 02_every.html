@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的 every 方法</title>
+</head>
+
+<body>
+    <script>
+        var arr = [
+            {
+                id: 10,
+                name: 'iPhone 7',
+                price: 6188,
+                count: 1,
+                state: true
+            },
+            {
+                id: 20,
+                name: 'iPad Pro',
+                price: 5888,
+                count: 1,
+                state: true
+            },
+            {
+                id: 30,
+                name: 'MacBook Pro',
+                price: 21488,
+                count: 1,
+                state: true
+            },
+        ]
+
+        // 判断数组的每一项, 如果满足则返回 true, 否则 返回 false;
+        var result = arr.every(item => item.state === true);
+        console.log('every result is :' + result);
+
+        result = arr.filter(item => item.state === false).length === 0;
+        console.log('filter result is :' + result);
+
+
+    </script>
+</body>
+
+</html>
