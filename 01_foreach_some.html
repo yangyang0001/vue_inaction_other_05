@@ -19,6 +19,10 @@
         
         arr.some((item, index) => {
             console.log('some method, ' + index + '---' + item);
+            // 找到可以暂停 return true, 这是 some 和 forEach 方法的最大区别
+            if(item === 'lisi') {
+                return true;
+            }
         });
 
     </script>
